@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Delete films</title>
+<title><?php echo $pageTitle; ?></title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 </head>
 <body>
@@ -11,16 +11,20 @@
 	<li><a href="index.php?action=edit">Update</a></li>
 	<li><a href="index.php?action=delete-list">Delete</a></li>
 </ul>
+<form action="index.php?action=delete" method="POST">
 <?php
 foreach ($films as $film) {
-    echo "<p>";
+     echo "<p>";
+    echo "<label>";
+    //outputs a checkbox button for each film e.g. <label><input type="checkbox" name="ids[]" value="1" '="">Jaws</label>
+    echo "<input type='checkbox' name='ids[]' value='{$film["id"]}''>";
     echo $film["title"];
-    //outputs a hyperlink for each film e.g. <a href="details.php?id=4">delete</a>
-    //each hyperlink has a query string (look back at practical 1) that specifies which film has been clicked on
-	echo " (<a href='index.php?action=delete&id=" . $film["id"] . "'>delete</a>)";
+    echo "</label>";
     echo "</p>";
 }
 
 ?>
+<input type="submit" value="Delete these films">
+</form>
 </body>
 </html>
