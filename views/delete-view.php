@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Delete the film</title>
+<title>Delete films</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 </head>
 <body>
@@ -12,7 +12,7 @@
 	<li><a href="index.php?action=delete-list">Delete</a></li>
 </ul>
 <?php
-echo $msg;
+echo "<p>Successfully deleted {$numFilms} films.</p>";
 ?>
 </body>
 </html>
