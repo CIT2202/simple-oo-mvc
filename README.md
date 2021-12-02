@@ -55,7 +55,7 @@ private function loadView($view,$data)
 > echo $msg; //outputs hello
 > ```
 > 
-> It is useful to us here as it allows us to unpack data in *loadView* and make it easily accessible to the code in a view. 
+> It is useful here as it allows us to unpack data and make it easily accessible to the code in a view. 
 >
 ## On your own
 * Try and get the 'create' and 'delete' actions to work as well. You should only have to make changes to *index.php*, *FilmController.php* and *FilmModel.php*. 
