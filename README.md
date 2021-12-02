@@ -6,9 +6,9 @@ First, find the file *DbConnect.php* and make changes to the connection settings
 
 The website has been re-factored to use an object oriented MVC pattern. Take some time to look at the files in the web site.
 
-* It use a basic front controller pattern, see *index.php*, just like we looked at previously. 
-* Instead of having flat files for each controller- *list.php*, *details.php* etc. there is now a *FilmController* class, this will feature methods for each action - *list*, *details* etc. 
-* The functions for working with a database (*getAllFilms*, *getFilmById* etc.) will be re-factored into a *FilmModel* class. 
+* It uses a basic front controller pattern, see *index.php*, just like we looked at previously. 
+* Instead of having flat files for each controller- *list.php*, *details.php* etc. there is now a *FilmController* class, this feature methods for each action - *list*, *details* etc. 
+* The functions for working with a database (*getAllFilms*, *getFilmById* etc.) have been re-factored into a *FilmModel* class. 
 * There is a separate *DbConnect* class for dealing with the connection to the database.
 
 Consider the 'list all films' action. 
