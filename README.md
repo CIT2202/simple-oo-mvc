@@ -48,11 +48,13 @@ private function loadView($view,$data)
 * The *loadView* method includes a *list-view.php* that displays the list of films. 
 
 > One bit of PHP code you probably haven't seen before is the extract() function. This function creates a variable for each key in an array e.g. 
-> ```
+> 
+> ```php
 > $arr=["msg"=>"hello","active"=>true];
 > extract($arr);
 > echo $msg; //outputs hello
 > ```
+> 
 > It is useful to us here as it allows us to unpack data in *loadView* and make it easily accessible to the code in a view. 
 >
 ## On your own
