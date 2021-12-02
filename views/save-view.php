@@ -15,7 +15,7 @@
 <?php
 
 
-echo "<p>".$msg."</p>";
+echo "<p>{$msg}</p>";
 
 ?>
 </body>
